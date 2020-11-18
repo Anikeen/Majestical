@@ -1,0 +1,44 @@
+.ankn-carousel {
+  position: relative;
+  overflow: hidden;
+  &__stage {
+    display: flex;
+    transition: transform .4s;
+  }
+  &__arrow-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__prev-arrow {
+    padding: 10px;
+    cursor: pointer;
+    &::after {
+      content: "prev";
+    }
+  }
+  &__next-arrow {
+    padding: 10px;
+    cursor: pointer;
+    &::after {
+      content: "next";
+    }
+  }
+  &__nav-dots {
+    display: flex;
+    justify-content: center;    
+  }
+  &__dot {
+    display: block;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+
+    background-color: #777;
+    border-radius: 50%;
+    cursor: pointer;
+    &.active {
+      background-color: #333;
+    }
+  }
+}
